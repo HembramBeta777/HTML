@@ -1,0 +1,62 @@
+
+<html>
+    <body>
+        <script>
+            var a = parseInt(prompt("Enter value for a"));
+            var b = parseInt(prompt("Enter value for b"));
+            var c = parseInt(prompt("Enter value for c"));
+
+            var d,root,root2,root3;
+
+            d = (b*b) - 4 * a * c;
+
+            document.write("The coefficient of a = "+a);
+            document.write("<br>");
+            document.write("The coefficient of b = "+b);
+            document.write("<br>");
+            document.write("The coefficient of c = "+c);
+            document.write("<br>");
+
+            if( (a==0) && (b==0)) 
+            {
+                document.write("No Solution found bevcause a=0 and b=0");
+                document.write("<br>");
+            }
+            else if(a==0){
+                document.write("One root found");
+                document.write("<br>");
+                root = -c/b;
+                document.write("root = "+root);
+            }
+            else if(d>0)
+            {
+                document.write("Two distinct real root exists");
+                document.write("<br>");
+                root2 = (parseFloat) ( (-b + Math.sqrt(d)) / 2*a );
+
+                root3 = (parseFloat) ( (-b - Math.sqrt(d)) / 2*a );
+
+                document.write("root2 = "+root2);
+                document.write("<br>");
+                document.write("root3 = "+root3);
+            }
+            else if(d==0)
+            {
+                document.write("Two real and equal roots exists");
+                document.write("<br>");
+                root2 = root3 = -b / (2*a);
+                document.write("roo2=root3 = "+root3);
+            }
+
+            else if(d<0)
+            {
+                document.write("Imaginary roots (There is no real root exists) ");
+               
+            }
+
+
+
+        </script>
+        
+    </body>
+</html>

@@ -1,0 +1,46 @@
+
+<html>
+    <body>
+        <script>
+            var a = parseInt(prompt("Enter side of the triange"));
+            var b = parseInt(prompt("Enter side of the triange"));
+            var c = parseInt(prompt("Enter side of the triange"));
+
+            document.write("The sides of the triangle are:");
+            document.write("<br>");
+            document.write("a = "+a);
+            document.write("<br>");
+            document.write("b = "+b);
+            document.write("<br>");
+            document.write("c = "+c);
+            document.write("<br>");
+            
+
+
+            if( ((a+b)>c) && ((b+c)>a) && ((c+a)>b) ) {
+                document.write("This is a valid Triangle");
+                document.write("<br>");
+
+                if( (a==b) && (b==c) && (c==a) ) {
+                    document.write("The triangle is an Equilateral");
+                }
+                else if( (a==b) || (b==c) || (c==a)) {
+                    document.write("The triangle is an isosceles");
+
+                }
+                else 
+                    document.write("The triangle is an scalene");
+
+
+            }
+            else{
+                document.write("This is not a valid Triangle");
+
+            }
+
+        
+
+        </script>
+        
+    </body>
+</html>

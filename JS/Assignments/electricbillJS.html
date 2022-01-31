@@ -1,0 +1,65 @@
+
+<html>
+    <body>
+        <script>
+            var prev_meter_reading = parseFloat(prompt("Enter the previous meter reading:"));
+            var curr_meter_reading = parseFloat(prompt("Enter the present meter reading:"));
+
+            if(prev_meter_reading > curr_meter_reading)
+            {
+                document.write("Please enter correct data !!! Sorry")
+                document.write(linebreak);
+            }
+            else
+            {
+
+                document.write("Previous Meter Reading = "+prev_meter_reading);
+                document.write("<br>");
+                document.write("Current Meter Reading = "+curr_meter_reading);
+                document.write("<br>");
+
+            
+                var unit = parseFloat(curr_meter_reading  - prev_meter_reading);
+                document.write("Unit usage = "+unit);
+                document.write("<br>");
+
+                var fees;
+            if(unit<=100)
+            {
+                fees = unit * 2.40;
+                document.write("Your current Electricity bill =  "+fees);
+                document.write(linebreak);
+            }
+            else if( (unit>100) && (unit<=200) )
+            {
+                fees = 100 * 2.40;
+                unit = unit - 100;
+                fees = fees + (unit * 3.50);
+                document.write("Your current Electricity bill =  "+fees);
+                document.write(linebreak);
+        
+            }
+            else
+            {
+                fees = 100 * 2.40;
+                unit = unit - 100;
+                fees = fees + (100 * 3.50);
+                unit = unit - 100;
+                fees = fees + (unit * 4.20);
+                document.write("Your current Electricity bill =  "+fees);
+                document.write(linebreak);
+        
+            }
+           
+            
+
+        }
+
+           
+
+
+
+        </script>
+        
+    </body>
+</html>

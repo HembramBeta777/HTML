@@ -1,0 +1,49 @@
+
+<html>
+    <body>
+        <script>
+            var eng = parseInt(prompt("Enter the mark secured in English out of 100:"));
+            var math = parseInt(prompt("Enter the mark secured in Math out of 100:"));
+            var sci = parseInt(prompt("Enter the mark secured in science out of 100:"));
+
+            var score = eng + math + sci;
+            var average_mark = score / 3;
+            document.write("Your Total Score = "+score);
+            document.write("<br>");
+            document.write("Average Mark = "+average_mark);
+            document.write("<br>");
+
+
+            if(average_mark >= 90){
+                document.write("Grade is O");
+                document.write(linebreak);
+            }
+            else if( (average_mark >= 80) && (average_mark < 90) ){
+                document.write("Grade is E");
+                document.write(linebreak);
+            }
+            else if( (average_mark >= 70) && (average_mark < 80) ){
+                document.write("Grade is A");
+                document.write(linebreak);
+            }
+            else if( (average_mark >= 60) && (average_mark < 70) ){
+                document.write("Grade is B");
+                document.write(linebreak);
+            }
+            else if( (average_mark >= 50) && (average_mark < 60)){
+                document.write("Grade is C");
+                document.write(linebreak);
+            }
+            else if( (average_mark >= 40) && (average_mark < 50) ){
+                document.write("Grade is D");
+                document.write(linebreak);
+            }
+            else if( (average_mark < 40) ){
+                document.write("Grade is F");
+            }
+
+            
+        </script>
+        
+    </body>
+</html>

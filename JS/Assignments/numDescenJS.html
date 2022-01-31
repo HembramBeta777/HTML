@@ -1,0 +1,81 @@
+
+<html>
+    <body>
+        <script>
+            var a = parseInt(prompt("Enter a number"));
+            var b = parseInt(prompt("Enter a number"));
+            var c = parseInt(prompt("Enter a number"));
+
+            document.write("a = "+a+" b = "+b+" c = "+c);
+            document.write("<br>");
+            document.write("After arrange in descending order");
+            document.write("<br>");
+            if( (a>=b)&& (a>=c)){
+
+                if( b>=c ){
+                    document.write(+a);
+                    document.write("<br>");
+                    document.write(+b);
+                    document.write("<br>");
+                    document.write(+c);
+                    document.write("<br>");
+
+                }
+                else{
+                    document.write(+a);
+                    document.write("<br>");
+                    document.write(+c);
+                    document.write("<br>");
+                    document.write(+b);
+                    document.write("<br>");
+
+                }
+
+            }
+            else if( (b>=a) && (b>=c) ) {
+
+                if( a>c ){
+                    document.write(+b);
+                    document.write("<br>");
+                    document.write(+a);
+                    document.write("<br>");
+                    document.write(+c);
+                    document.write("<br>");
+                }
+                else{
+                    document.write(+b);
+                    document.write("<br>");
+                    document.write(+c);
+                    document.write("<br>");
+                    document.write(+a);
+                    document.write("<br>");
+                }
+
+            }
+            else if( (c>a) && (c>b) ){
+                if(a>b){
+                    document.write(+c);
+                    document.write("<br>");
+                    document.write(+a);
+                    document.write("<br>");
+                    document.write(+b);
+                    document.write("<br>");
+                }
+                else{
+                    document.write(+c);
+                    document.write("<br>");
+                    document.write(+b);
+                    document.write("<br>");
+                    document.write(+a);
+                    document.write("<br>");
+                }
+            }
+
+            
+
+
+       
+        </script>
+        
+    </body>
+</html>
