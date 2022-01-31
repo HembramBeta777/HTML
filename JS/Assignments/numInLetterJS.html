@@ -1,0 +1,56 @@
+<html>
+    <body>
+        <script>
+            var num = parseInt(prompt("Enter a number"));
+            document.write("Number = "+num);
+            document.write("<br>");
+            var last_dg,rev=0;
+            while (num!=0) {
+                last_dg = num%10;
+                rev = rev * 10 + last_dg;
+                num = Math.floor(num/10);
+                
+            }
+            num = rev;
+            while (num!=0) {
+                rev = num % 10;
+                switch(rev){
+                    case 1:
+                        document.write("One ");
+                        break;
+                    case 2:
+                        document.write("Two ");
+                        break;
+                    case 3:
+                        document.write("Three ");
+                        break;
+                    case 4:
+                        document.write("Four ");
+                        break;
+                    case 5:
+                        document.write("Five ");
+                        break;
+
+                    case 6:
+                        document.write("Six ");
+                        break;
+                    case 7:
+                        document.write("Seven ");
+                        break;
+                    case 8:
+                        document.write("Eight ");
+                        break;
+                    case 9:
+                        document.write("Nine ");
+                        break;
+                    case 0:
+                        document.write("Zero ");
+                        break;
+                }
+                num = Math.floor(num/10);
+                
+            }
+
+        </script>
+    </body>
+</html>

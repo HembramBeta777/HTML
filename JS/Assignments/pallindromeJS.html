@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <script>
+            var num = parseInt(prompt("Enter a number: "));
+            var rev=0,remainder;
+            document.write("Number = "+num);
+            var temp = num;
+            document.write("<br>");
+
+            while (num!=0) {
+                remainder = num % 10;
+                rev = rev * 10 + remainder;
+                num =Math.floor(num/10) ;
+                
+            }
+            if(temp==rev){
+                document.write(+temp+" is a pallindrome");
+
+            }
+            else
+                document.write(+temp+" is not a  pallindrome");
+
+           
+        </script>
+    </body>
+</html>
