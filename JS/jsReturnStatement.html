@@ -1,0 +1,27 @@
+<!--Return statement in Javascript-->
+
+<html>
+    <head>
+        <script>
+            function firstFunction (value1,value2)
+            {
+               var res;
+               res = value1 + value2;
+               return res;
+            }
+            function secondFunction(){
+                var result;
+                result = firstFunction('Utkal',"University");
+                document.write("Concatenated result is "+result);
+            }
+
+        </script>
+
+    </head>
+    <body>
+        <p>Click the button to call the function</p>
+        <form>
+            <input type="button" onclick="secondFunction()"value = "Click Me">
+        </form>
+    </body>
+</html>
