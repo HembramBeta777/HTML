@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script>
+            function findAbsolute(num) {
+                var  temp ;
+                temp = num;
+                if(num<0){
+                    num = (-1) * num;
+
+                }
+                document.write("Absolute value of |"+temp+ "| = "+num);
+                
+            }
+
+        </script>
+
+    </head>
+    <body>
+        <script>
+            var n = parseInt(prompt("Enter a number: "));
+        </script>
+        <p>Click the button to Find Absolute value</p>
+        <form>
+            <input type="button" onclick="findAbsolute(n)"value = "Click Here">
+        </form>
+       
+
+        
+    </body>
+</html>
