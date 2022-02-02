@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script>
+            function FindCI(p,r,t) {
+                var ci;
+                ci = p * Math.pow( (1 + r / 100), t) - p;
+                document.write("The compound interest = "+ci);
+                
+                
+                
+            }
+
+        </script>
+
+    </head>
+    <body>
+        <script>
+            var prin = parseFloat(prompt("Enter the principle: "));
+            var rate = parseFloat(prompt("Enter the rate:"));
+            var time = parseFloat(prompt("Enter the time:"));
+        </script>
+        <p>Click the button to calculate Compound Interest</p>
+        <form>
+            <input type="button" onclick="FindCI(prin,rate,time)"value = "Click Here">
+        </form>
+       
+
+        
+    </body>
+</html>

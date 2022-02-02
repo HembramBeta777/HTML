@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script>
+            function findAreaOfCircle(rad,x) {
+                var  area ;
+                area = x * rad * rad;
+
+                document.write("Radius of the circle = "+rad);
+                document.write("<br>");
+                document.write("Area of the circle = "+area);
+                
+            }
+
+        </script>
+
+    </head>
+    <body>
+        <script>
+            var r = parseInt(prompt("Enter the radius of circle: "));
+            var x = Math.PI;
+        </script>
+        <p>Click the button to calculate radius of a circle</p>
+        <form>
+            <input type="button" onclick="findAreaOfCircle(r,x)"value = "Click Here">
+        </form>
+       
+
+        
+    </body>
+</html>

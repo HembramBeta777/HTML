@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script>
+            function convertKMinMile(km) {
+                var  result ;
+                result = km * 0.621371
+                
+                document.write("Km = "+km);
+                document.write("<br>");
+                document.write("Mile  = "+result);
+                
+            }
+
+        </script>
+
+    </head>
+    <body>
+        <script>
+            var km = parseFloat(prompt("Enter the distance in Kilometeres: "));
+         
+        </script>
+        <p>Click the button to convert Km in miles</p>
+        <form>
+            <input type="button" onclick="convertKMinMile(km)"value = "Click Here">
+        </form>
+       
+
+        
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <script>
+            function power(b,e) {
+                var result = Math.pow(b,e);
+                document.write("Base = "+b);
+            document.write("<br>");
+            document.write("Exponent = "+e);
+            document.write("<br>");
+            document.write("Result = "+result);
+
+            }
+           
+        </script>
+    </head>
+    <body>
+        <script>
+            var base = parseInt(prompt("Enter the base"));
+            var expo = parseInt(prompt("Enter the Exponent"));
+        </script>
+
+        <p>Click the button to find a raised to the power b</p>
+        <form>
+            <input type="button" onclick="power(base,expo)"value = "Click Me">
+        </form>
+    </body>
+</html>

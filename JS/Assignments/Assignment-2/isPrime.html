@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <script>
+            function isPrime(n) {
+                var  flag=0;
+                var m=n/2;
+
+               for(i=2;i<=m;i++){
+                   if (n%i==0) {
+                       document.write(+n+" is not a prime number");
+                       flag = 1;
+                       break;
+                       
+                   }
+               }
+                   if (flag==0) {
+                       document.write(+n+" is a prime number");
+                       
+                   }
+               
+                
+
+               
+            }
+
+        </script>
+
+    </head>
+    <body>
+        <script>
+            var num = parseInt(prompt("Enter a number to check it is Prime or not: "));
+            
+        </script>
+        <p>Click the button to check the number is prime or not</p>
+        <form>
+            <input type="button" onclick="isPrime(num)"value = "Click Here">
+        </form>
+       
+
+        
+    </body>
+</html>

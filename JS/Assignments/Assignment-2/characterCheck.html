@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <script>
+            function vowelCons(char1) {
+                
+                if( (char1=='a') || (char1=='e') || (char1=='i') || (char1=='o') || (char1=='u') || (char1=='A') || (char1=='E') || (char1=='I') || (char1=='O') || (char1=='U'))
+                {
+                    document.write("Entered Character "+char1+" is a Vowel");
+
+                }
+                else{
+                    document.write("Entered Character: "+char1+" is a Consonant");
+
+                }
+                   
+                
+                
+            }
+
+        </script>
+
+    </head>
+    <body>
+        <script>
+            var ch = (prompt("Enter a character for checking it is vowel or consonant: "));
+         
+        </script>
+        <p>Click the button to check entered character is vowel or consonant</p>
+        <form>
+            <input type="button" onclick="vowelCons(ch)"value = "Click Here">
+        </form>
+       
+
+        
+    </body>
+</html>

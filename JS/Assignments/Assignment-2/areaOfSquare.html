@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <script>
+            function areaSquare(rad) {
+                var  area ;
+                area = 2 * rad * rad;
+
+                document.write("Radius of the circle = "+rad);
+                document.write("<br>");
+                document.write("Area of the Square = "+area);
+                
+            }
+
+        </script>
+
+    </head>
+    <body>
+        <script>
+            var r = parseInt(prompt("Enter the radius of circle: "));
+         
+        </script>
+        <p>Click the button to calculate area of the square fitting inside a circle</p>
+        <form>
+            <input type="button" onclick="areaSquare(r)"value = "Click Here">
+        </form>
+       
+
+        
+    </body>
+</html>
