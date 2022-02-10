@@ -1,0 +1,13 @@
+<!--This Example finds all elements of <p> tag-->
+<html>
+    <body>
+        <h1> Javascript HTML DOM Example </h1>
+        <p> Finding HTML Elements by tag name </p>
+        <p> This Example demonstrate the <b> getElementsByTagName </b> method </p>
+        <p id="pid"> </p>
+        <script>
+            const element = document.getElementsByTagName("p");
+            document.getElementById("pid").innerHTML = 
+            'The text in the first paragraph is : '+ element[0].innerHTML;
+
+        </script>
