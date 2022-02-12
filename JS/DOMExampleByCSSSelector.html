@@ -1,0 +1,16 @@
+<!--Finding HTML Elements by CSS selector-->
+<!DOCTYPE html>
+<html>
+    <body>
+        <h2>Javascript HTML DOM</h2>
+        <p class="intro">Finding HTML Elements by CSS selectors</p>
+        <p>Hello world</p>
+        <p class="intro">This Example demonstrate the <b>getElementsByCSSSelectors</b>
+        <p id="demo"></p>
+        <script>
+            var x = document.querySelectorAll("p.intro");
+            document.getElementById("demo").innerHTML=
+            'The first paragraph (index 1) with class="intro" is:' + x[1].innerHTML;
+        </script>
+    </body>
+</html>
